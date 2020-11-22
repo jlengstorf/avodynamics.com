@@ -37,6 +37,7 @@
     "portfolio",
     "developer"
   ],
+  "browserslist": [">0.25%", "not dead"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
+    "babel-preset-gatsby": "^0.7.0",
     "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^5.14.1",
     "eslint-config-airbnb": "^17.1.0",
