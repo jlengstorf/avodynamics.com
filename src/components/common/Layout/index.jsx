@@ -1,12 +1,13 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { defaultRebootTheme } from 'styled-reboot';
 import { Footer } from 'components/theme';
-import { Global } from './styles';
-import './fonts.css';
+import { GlobalStyle } from './styles';
 
 export const Layout = ({ children }) => (
-  <>
-    <Global />
+  <ThemeProvider theme={defaultRebootTheme}>
+    <GlobalStyle />
     {children}
     <Footer />
-  </>
+  </ThemeProvider>
 );
