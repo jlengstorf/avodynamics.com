@@ -1,16 +1,12 @@
 const styleVars = {
   colors: {
-    // grays: [
-    //   '#F8F9FA',
-    //   '#CECFD7',
-    //   '#A6A6B4',
-    //   '#807F91',
-    //   '#5D5E6E',
-    //   '#3C3E4B',
-    //   '#1F2026',
-    // ],
     main: ['rgb(12,22,38)', 'rgb(15,58,77)', 'rgb(15,119,122)', 'rgb(106, 180, 174)', 'rgb(204,233,227)'],
     secondary: ['rgb(28,15,16)', 'rgb(69,21,22)', 'rgb(122,32,22)', 'rgb(186,126,104)', 'rgb(236,216,204)'],
+  },
+  transitions: {
+    fast: '0.2s',
+    normal: '0.4s',
+    slow: '0.6s',
   },
   mixins: {
     // use in component with ${styleVars.mixins.mixinName}

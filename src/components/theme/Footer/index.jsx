@@ -1,31 +1,51 @@
 import React from 'react';
-import { Container } from 'components/common';
-import { Wrapper, Flex, Links, Details } from './styles';
-import social from './social.json';
+import SocialIcon from 'components/common/SocialIcons';
+import { Youtube } from '@styled-icons/boxicons-logos/Youtube';
+import { FacebookCircle } from '@styled-icons/boxicons-logos/FacebookCircle';
+import { Office } from '@styled-icons/icomoon/Office';
+import { Call } from '@styled-icons/ionicons-solid/Call';
+import { Mail } from '@styled-icons/heroicons-solid/Mail';
+import {
+  Wrapper,
+  StyledSocialContainer,
+  StyledLogo,
+  StyledSocialIconContainer,
+  StyledContactContainer,
+  StyledContact,
+  StyledCopyright,
+} from './styles';
 
 export const Footer = () => (
   <Wrapper>
-    <Flex as={Container}>
-      <Details>
-        <h2>John Doe</h2>
-        <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
-          <span aria-label="love" role="img">
-            💖
-          </span>{' '}
-          by{' '}
-          <a href="https://smakosh.com/?ref=portfolio-dev" rel="noopener noreferrer" target="_blank">
-            Smakosh
-          </a>
-        </span>
-      </Details>
-      <Links>
-        {social.map(({ id, name, link, icon }) => (
-          <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
-            <img width="24" src={icon} alt={name} />
-          </a>
-        ))}
-      </Links>
-    </Flex>
+    <StyledSocialContainer>
+      <StyledLogo />
+      <StyledSocialIconContainer>
+        <SocialIcon link="/">
+          <Youtube />
+        </SocialIcon>
+        <SocialIcon link="/">
+          <FacebookCircle />
+        </SocialIcon>
+      </StyledSocialIconContainer>
+      <StyledContactContainer>
+        <StyledContact>
+          <Office />
+          <span>
+            1234 test ave
+            <br />
+            Mobile, AL
+          </span>
+        </StyledContact>
+        <StyledContact>
+          <Call />
+          <a href="tel:+11234567890">(123) 456-7890</a>
+        </StyledContact>
+        <StyledContact>
+          <Mail />
+          <a href="mailto:solutions@avodynamics.com">solutions@avodynamics.com</a>
+        </StyledContact>
+      </StyledContactContainer>
+    </StyledSocialContainer>
+    <StyledCopyright>© {new Date().getFullYear()} Avo Dynamics. All Rights Reserved</StyledCopyright>
   </Wrapper>
 );

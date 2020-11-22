@@ -1,56 +1,82 @@
 import footerIllustration from 'assets/illustrations/footer.svg';
+import Logo from 'assets/vector/logo-full.svg';
 import styled from 'styled-components';
+import { mq } from 'styles/media';
+import { transparentize } from 'polished';
+import styleVars from 'styles/styleVars.js';
 
-export const Wrapper = styled.div`
-  padding: 28rem 0 4rem 0;
+export const Wrapper = styled.footer`
+  padding: 28rem 0 0.5rem 0;
   background-image: url(${footerIllustration});
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-
-  @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
-  }
-`;
-
-export const Flex = styled.div`
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-
-  @media (max-width: 680px) {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-`;
-
-export const Links = styled.div`
-  display: flex;
+  justify-content: center;
   align-items: center;
-
-  a {
-    margin: 0 0.5rem;
-
-    img {
-      margin: 0;
-    }
-
-    &:first-child,
-    &:last-child {
-      margin: 0;
-    }
-  }
+  flex-direction: column;
 `;
 
-export const Details = styled.div`
-  h2,
+export const StyledSocialContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  width: 95%;
+  padding: 30px 0;
+  max-width: 1000px;
+`;
+
+export const StyledLogo = styled(Logo)`
+  width: 20vw;
+  margin-bottom: 1rem;
+`;
+
+export const StyledSocialIconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  width: 15vw;
+  justify-content: space-between;
+`;
+
+export const StyledContactContainer = styled.address`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+`;
+
+export const StyledContact = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  svg {
+    width: 2rem;
+    color: ${styleVars.colors.secondary[2]};
+    margin-right: 1rem;
+    mask-image: linear-gradient(rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.66) 100%);
+  }
   a,
   span {
-    color: #212121;
+    background: -webkit-linear-gradient(0deg, ${styleVars.colors.secondary[2]} 0%, ${styleVars.colors.main[2]} 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 500;
   }
+`;
 
-  @media (max-width: 680px) {
-    margin-bottom: 2rem;
-  }
+export const StyledCopyright = styled.div`
+  font-weight: 300;
+  padding: 0.5rem;
+  color: ${transparentize(0.13, styleVars.colors.main[2])};
+  width: 100%;
+  text-align: right;
+  border-top: 2px solid ${transparentize(0.88, styleVars.colors.secondary[2])};
 `;
