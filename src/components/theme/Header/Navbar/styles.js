@@ -1,16 +1,16 @@
 import styled from 'styled-components';
+import Logo from 'assets/vector/logo.svg';
 
-export const Wrapper = styled.div`
-  padding: 1.5rem 0;
+export const Wrapper = styled.nav`
+  width: 100%;
+  padding: 1rem 10vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
-export const Brand = styled.a`
-  color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+export const HomeLink = styled.a``;
 
-  @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-  }
+export const StyledLogo = styled(Logo)`
+  height: 3rem;
 `;

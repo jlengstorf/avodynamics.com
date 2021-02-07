@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { transparentize } from 'polished';
+import styleVars from 'styles/styleVars.js';
 
 export const Wrapper = styled.div`
   z-index: 5;
@@ -34,7 +36,7 @@ export const Bar = styled.div`
 	width: 1.6rem;
 	height: .15rem;
 	margin-bottom: .3rem;
-	background-color: #212121;
+	background-color: ${styleVars.colors.main[2]};
 	transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
 	opacity 500ms,
 	box-shadow 250ms,
@@ -47,8 +49,8 @@ export const Bar = styled.div`
 	${({ top, sidebar, theme }) =>
     top &&
     sidebar &&
-		`
-		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+    `
+		background-color: ${styleVars.colors.secondary[3]};
 		transform: translateY(8px) rotate(-135deg);
 		
 	`}
@@ -56,15 +58,15 @@ export const Bar = styled.div`
 	${({ mid, sidebar }) =>
     mid &&
     sidebar &&
-		`
+    `
 		transform: scale(0);
 		`}
 
 	${({ bottom, sidebar, theme }) =>
     bottom &&
     sidebar &&
-		`
-			background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+    `
+			background-color: ${styleVars.colors.secondary[3]};
 			transform: translateY(-6px) rotate(-45deg);
 	`}
 `;
