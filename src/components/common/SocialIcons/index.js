@@ -14,12 +14,12 @@ const StyledSocialIcon = styled.div`
     & > svg {
       width: 2rem;
       margin: 0.5rem;
-      color: ${transparentize(0.46, styleVars.colors.main[2])};
+      color: ${transparentize(0.46, styleVars.colors.teal[3])};
       transition: color ${styleVars.transitions.fast} ease-out;
     }
 
     &:hover > svg {
-      color: ${transparentize(0.13, styleVars.colors.secondary[2])};
+      color: ${transparentize(0.13, styleVars.colors.burg[3])};
     }
   }
 `;
@@ -28,7 +28,7 @@ const SocialIcon = props => {
   const { link, children } = props;
   return (
     <StyledSocialIcon>
-      <a href={link} target="_blank" rel="noreferrer" aria-label={`social link to ${props.link}`}>
+      <a href={link} target="_blank" rel="noreferrer" aria-label={`social link to ${link}`}>
         {children}
       </a>
     </StyledSocialIcon>

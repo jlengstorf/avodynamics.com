@@ -5,22 +5,22 @@ import { transparentize } from 'polished';
 export const Wrapper = styled.div`
   overflow-x: hidden;
   a {
-    color: ${transparentize(0.46, styleVars.colors.main[2])};
+    color: ${transparentize(0.46, styleVars.colors.teal[3])};
     transition: color ${styleVars.transitions.fast} ease-out;
     text-decoration: none;
     font-weight: 500;
     &:hover {
-      color: ${transparentize(0.13, styleVars.colors.secondary[2])};
+      color: ${transparentize(0.13, styleVars.colors.burg[3])};
     }
     &.active {
-      color: ${transparentize(0.13, styleVars.colors.secondary[2])};
+      color: ${transparentize(0.13, styleVars.colors.burg[3])};
     }
 
     @media (max-width: 960px) {
-      color: ${transparentize(0.13, styleVars.colors.main[3])};
+      color: ${transparentize(0.13, styleVars.colors.teal[4])};
 	  padding-bottom: 2px;
 	  position: relative;
-      /* border-bottom: 1px solid ${transparentize(0.8, styleVars.colors.main[3])} */
+      /* border-bottom: 1px solid ${transparentize(0.8, styleVars.colors.teal[4])} */
 	  &::after {
 		content: "";
 		position: absolute;
@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
 		height: 1px;
 		width: 110%;
 		margin-left: -1.25rem;
-		background: linear-gradient(90deg, transparent 0%, ${transparentize(0.8, styleVars.colors.main[3])} 50%);
+		background: linear-gradient(90deg, transparent 0%, ${transparentize(0.8, styleVars.colors.teal[4])} 50%);
 	  }
     }
   }

@@ -56,13 +56,13 @@ export const StyledContact = styled.div`
   width: 33%;
   svg {
     width: 2rem;
-    color: ${styleVars.colors.secondary[2]};
+    color: ${styleVars.colors.burg[3]};
     margin-right: 1rem;
     mask-image: linear-gradient(rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.66) 100%);
   }
   a,
   span {
-    background: -webkit-linear-gradient(0deg, ${styleVars.colors.secondary[2]} 0%, ${styleVars.colors.main[2]} 70%);
+    background: -webkit-linear-gradient(0deg, ${styleVars.colors.burg[3]} 0%, ${styleVars.colors.teal[3]} 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -75,8 +75,8 @@ export const StyledContact = styled.div`
 export const StyledCopyright = styled.div`
   font-weight: 300;
   padding: 0.5rem;
-  color: ${transparentize(0.13, styleVars.colors.main[2])};
+  color: ${transparentize(0.13, styleVars.colors.teal[3])};
   width: 100%;
   text-align: right;
-  border-top: 2px solid ${transparentize(0.88, styleVars.colors.secondary[2])};
+  border-top: 2px solid ${transparentize(0.88, styleVars.colors.burg[3])};
 `;

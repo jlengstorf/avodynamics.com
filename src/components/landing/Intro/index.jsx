@@ -1,12 +1,10 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Header } from 'components/theme';
 import { Container } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Sizzle, ButtonGroup, Button } from './styles';
 
 export const Intro = () => (
   <Wrapper>
-    <Header />
+    {/* <Header /> */}
     <IntroWrapper as={Container}>
       <Details>
         <h1>AVO Dynamics</h1>

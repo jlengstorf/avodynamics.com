@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/overlay.svg';
 import { transparentize } from 'polished';
 import styleVars from 'styles/styleVars.js';
-import filmRollIcon from 'assets/icons/film-roll.svg';
-import ticketStubIcon from 'assets/icons/ticket-stub.svg';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -35,11 +33,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 1rem;
     font-size: 3rem;
-    color: ${styleVars.colors.secondary[2]};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+    color: ${styleVars.colors.burg[3]};
 
     @media (max-width: 680px) {
       font-size: 30pt;
@@ -50,11 +44,7 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 2rem;
     font-weight: normal;
-    color: ${styleVars.colors.main[3]};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+    color: ${styleVars.colors.teal[4]};
 
     @media (max-width: 680px) {
       font-size: 26pt;
@@ -68,29 +58,25 @@ export const Sizzle = styled.aside`
   align-items: center;
   justify-content: center;
   .quote {
-    /* border-left: 1rem solid;
-    border-right: 1rem solid;
-    border-image-source: url(${filmRollIcon});
-    border-image-width: 1rem;
-    border-image-slice: 50%;
-    border-image-repeat: repeat; */
     max-width: 400px;
     font-family: serif;
     font-size: 1.25rem;
     line-height: 1.2;
-    color: ${styleVars.colors.main[4]};
+    color: ${styleVars.colors.teal[5]};
     padding: 40px 40px 40px 50px;
     display: inline-block;
     position: relative;
-    box-shadow:
-      0 3px 8px ${transparentize(0.66, styleVars.colors.main[2])},
-      0px 3px 12px ${transparentize(0.86, styleVars.colors.main[0])};
-    background: ${styleVars.colors.main[1]};
-    border: .5rem solid;
+    box-shadow: 0 3px 8px ${transparentize(0.66, styleVars.colors.teal[2])},
+      0px 3px 12px ${transparentize(0.86, styleVars.colors.teal[1])};
+    background: ${styleVars.colors.teal[2]};
+    border: 0.5rem solid;
     border-image-slice: 1;
-    border-image-source: 
-    linear-gradient(110deg, ${transparentize(0.4, styleVars.colors.main[2])} 25%, 
-    ${transparentize(0, styleVars.colors.main[2])}, ${transparentize(0.3, styleVars.colors.main[2])});
+    border-image-source: linear-gradient(
+      110deg,
+      ${transparentize(0.4, styleVars.colors.teal[2])} 25%,
+      ${transparentize(0, styleVars.colors.teal[2])},
+      ${transparentize(0.3, styleVars.colors.teal[2])}
+    );
   }
   .quote:before {
     width: 30px;
@@ -149,13 +135,13 @@ export const Button = styled.button`
     color: rgba(255, 255, 255, 0.87);
     background: linear-gradient(
       90deg,
-      ${styleVars.colors.main[1]} 0%,
-      ${styleVars.colors.secondary[2]} 70%,
-      ${styleVars.colors.secondary[3]} 100%
+      ${styleVars.colors.teal[2]} 0%,
+      ${styleVars.colors.burg[3]} 70%,
+      ${styleVars.colors.burg[4]} 100%
     );
   }
   &.secondary {
-    color: ${styleVars.colors.secondary[2]};
+    color: ${styleVars.colors.burg[3]};
     background: #fff;
     background-clip: padding-box;
     border: solid 4px transparent;
@@ -175,18 +161,18 @@ export const Button = styled.button`
     border-radius: inherit; /* !importanté */
     background: linear-gradient(
       to right,
-      ${styleVars.colors.secondary[2]},
-      ${styleVars.colors.secondary[3]},
-      ${styleVars.colors.secondary[2]}
+      ${styleVars.colors.burg[3]},
+      ${styleVars.colors.burg[4]},
+      ${styleVars.colors.burg[3]}
     );
   }
   &.secondary:hover {
     color: rgba(255, 255, 255, 0.87);
     background: linear-gradient(
       to right,
-      ${styleVars.colors.secondary[2]},
-      ${styleVars.colors.secondary[3]},
-      ${styleVars.colors.secondary[2]}
+      ${styleVars.colors.burg[3]},
+      ${styleVars.colors.burg[4]},
+      ${styleVars.colors.burg[3]}
     );
   }
 `;
