@@ -1,15 +1,41 @@
 # Add Libraries
 
 - [ ] hero-patterns
-- [ ] ? polished
 - [ ] ? smooth-scroll
 - [ ] ? react-awesome-reveal
-- [ ] ? styled-reboot?
 
 # Styling
-
-- [ ] add variables & mixins
 
 # Responsive
 
 - [ ] Footer
+
+# Misc Tasks to go through
+
+- [ ] https://github.com/LucasBassetti/react-css-loaders for contact page and other such items
+- [ ] https://github.com/binjospookie/spacing-helper for Vertical Rythem?
+    - [ ] If wanting to get crazy https://github.com/kyleshevlin/shevyjs
+
+- [ ] https://undraw.co/ Illustrations
+
+- [ ] https://www.svgbackgrounds.com/#pattern-randomized Maybe for header
+- [ ] https://philiprogers.com/svgpatterns/ Simple Patterns
+
+- [ ] https://www.30secondsofcode.org/css/s/custom-text-selection
+- [ ] https://www.30secondsofcode.org/css/s/custom-scrollbar
+
+- [ ] www.goodemailcopy.com For Dubsado
+
+## Pages
+- [ ] https://www.lapa.ninja/post/totem-media/
+- [ ] https://www.lapa.ninja/post/bigbump/
+- [ ] https://www.lapa.ninja/post/raw-studio-2/
+    - Header: Logo left, Navigation Center, CTA Button on Right (Get a free proposal)
+    - Introduction Video (on About Page)
+    - We design... Sub Heading (mention approach, and scale of expirience - small buisness, enterprise, education, manufacturing)
+    - Services List: Colorful Icon, Heading, Subheading, list for each item below, borders between columns
+        - See Our Process
+    - Case Study Section is Awesome
+    - Process flow is great
+    - "Beyond Buisness" list of community services & projects
+    - Testimonials Section is Bang Up, maybe include it below testimonial from other site

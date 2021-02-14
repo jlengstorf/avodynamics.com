@@ -1,27 +1,31 @@
 import React from 'react';
-import { Container } from 'components/common';
-import { Wrapper, IntroWrapper, Details, Sizzle, ButtonGroup, Button } from './styles';
+import { Link } from 'gatsby';
+import { Container, Button } from 'components/common';
+import { Wrapper, IntroWrapper, Details, Sizzle, ButtonGroup } from './styles';
 
+/* TODO: Use Gatsby Link for Buttons */
 export const Intro = () => (
   <Wrapper>
-    {/* <Header /> */}
     <IntroWrapper as={Container}>
       <Details>
         <h1>AVO Dynamics</h1>
         <h2>Audio/Video & Organizational Solutions</h2>
         <ButtonGroup>
-          <Button /* as={AnchorLink} */ href="" className="secondary">
+          <Button as={Link} to="#" className="secondary">
             See our work
           </Button>
-          <Button /* as={AnchorLink} */ className="primary" href="">
+          <Button as={Link} to="/contact" className="primary">
             <span>Work with us</span>
           </Button>
         </ButtonGroup>
       </Details>
       <Sizzle>
         <div className="quote">
-          A quick description about who we are, what we do, and what our work means to us.... Or some such butter
-          sandwichy non-sense that makes big companies want to hand over fat stacks.
+          <div className="quoteBG">
+            Our focus is on providing business solutions that <em>improve our client’s operations.</em> From getting
+            more customers through the door to improving the way you capture information and data, we can save you time
+            and money while becoming more effective in your business.
+          </div>
         </div>
       </Sizzle>
     </IntroWrapper>

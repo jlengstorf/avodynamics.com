@@ -1,14 +1,9 @@
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/overlay.svg';
 import { transparentize } from 'polished';
 import styleVars from 'styles/styleVars.js';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
-  /* background-image: url(${overlayIllustration}); */
-  background-size: contain;
-  background-position: right top;
-  background-repeat: no-repeat;
 `;
 
 export const IntroWrapper = styled.div`
@@ -44,7 +39,7 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 2rem;
     font-weight: normal;
-    color: ${styleVars.colors.teal[4]};
+    color: ${styleVars.colors.teal[3]};
 
     @media (max-width: 680px) {
       font-size: 26pt;
@@ -57,25 +52,31 @@ export const Sizzle = styled.aside`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 960px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
   .quote {
     max-width: 400px;
+    width: 80%;
     font-family: serif;
     font-size: 1.25rem;
     line-height: 1.2;
-    color: ${styleVars.colors.teal[5]};
+    color: ${transparentize(0.13, styleVars.colors.teal[5])};
     padding: 40px 40px 40px 50px;
     display: inline-block;
     position: relative;
-    box-shadow: 0 3px 8px ${transparentize(0.66, styleVars.colors.teal[2])},
-      0px 3px 12px ${transparentize(0.86, styleVars.colors.teal[1])};
+    /* box-shadow: 0 3px 8px ${transparentize(0.66, styleVars.colors.teal[2])},
+      0px 3px 12px ${transparentize(0.86, styleVars.colors.teal[1])}; */
     background: ${styleVars.colors.teal[2]};
     border: 0.5rem solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(
-      110deg,
-      ${transparentize(0.4, styleVars.colors.teal[2])} 25%,
-      ${transparentize(0, styleVars.colors.teal[2])},
-      ${transparentize(0.3, styleVars.colors.teal[2])}
+      115deg,
+      ${transparentize(0.6, styleVars.colors.teal[3])} 20%,
+      ${transparentize(0, styleVars.colors.teal[3])},
+      ${transparentize(0.8, styleVars.colors.teal[3])}
     );
   }
   .quote:before {
@@ -102,77 +103,30 @@ export const Sizzle = styled.aside`
     opacity: 0.8;
     mix-blend-mode: color-dodge;
   }
+  .quoteBG {
+    margin: -40px -40px -40px -50px;
+    padding: 40px 40px 40px 50px;
+  }
+  .quoteBG:after {
+    content: '';
+    width: calc(100% + 1rem);
+    height: calc(100% + 1rem);
+    position: absolute;
+    background: linear-gradient(
+      ${styleVars.colors.teal[3]} 20%,
+      ${styleVars.colors.teal[4]},
+      ${styleVars.colors.teal[3]}
+    );
+    top: -0.25rem;
+    left: -0.5rem;
+    filter: blur(0.6rem);
+    opacity: 1;
+    z-index: -1;
+  }
 `;
 
 export const ButtonGroup = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
-`;
-
-export const Button = styled.button`
-  cursor: pointer;
-  border-radius: 3px;
-  border: none;
-  -webkit-touch-callout: none;
-  user-select: none;
-  font-weight: 500;
-  position: relative;
-  box-sizing: border-box;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.7rem 1.8rem;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:disabled {
-    background: gray;
-  }
-
-  &.primary {
-    color: rgba(255, 255, 255, 0.87);
-    background: linear-gradient(
-      90deg,
-      ${styleVars.colors.teal[2]} 0%,
-      ${styleVars.colors.burg[3]} 70%,
-      ${styleVars.colors.burg[4]} 100%
-    );
-  }
-  &.secondary {
-    color: ${styleVars.colors.burg[3]};
-    background: #fff;
-    background-clip: padding-box;
-    border: solid 4px transparent;
-    font-style: normal;
-    transition: color ${styleVars.transitions.slow} ease-in-out;
-    transition: background ${styleVars.transitions.fast} ease-in-out;
-  }
-  &.secondary:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -4px; /* !importanté */
-    border-radius: inherit; /* !importanté */
-    background: linear-gradient(
-      to right,
-      ${styleVars.colors.burg[3]},
-      ${styleVars.colors.burg[4]},
-      ${styleVars.colors.burg[3]}
-    );
-  }
-  &.secondary:hover {
-    color: rgba(255, 255, 255, 0.87);
-    background: linear-gradient(
-      to right,
-      ${styleVars.colors.burg[3]},
-      ${styleVars.colors.burg[4]},
-      ${styleVars.colors.burg[3]}
-    );
-  }
 `;
