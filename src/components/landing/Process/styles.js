@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { transparentize, desaturate } from 'polished';
 import styleVars from 'styles/styleVars.js';
 import Icon1 from 'assets/vector/Communication-Icon.svg';
-import Icon2 from 'assets/vector/PC-Icon.svg';
+import Icon2 from 'assets/vector/Idea-Icon.svg';
+import Icon3 from 'assets/vector/Development-Icon.svg';
+import Icon4 from 'assets/vector/PC-Icon.svg';
 import ProcessCallout from 'assets/vector/process-callout.svg';
 
 export const Wrapper = styled.div`
@@ -26,7 +28,8 @@ export const ProcessWrapper = styled.section`
 `;
 
 export const ProcessTitleWrapper = styled.div`
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
+  padding-top: 6rem;
   h2 {
     color: ${transparentize(0.13, styleVars.colors.burg[3])};
     font-size: 2.4rem;
@@ -38,7 +41,7 @@ export const ProcessTitleWrapper = styled.div`
 `;
 
 export const ProcessHeadingWrapper = styled.div`
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,32 +50,51 @@ export const ProcessHeading = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  padding-bottom: 2rem;
   h3 {
-    color: ${desaturate(0.9, transparentize(0.13, styleVars.colors.burg[5]))};
-    font-size: 0.9rem;
+    color: ${desaturate(0.5, transparentize(0.13, styleVars.colors.burg[3]))};
+    font-size: 1rem;
     margin-bottom: 0rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1rem;
   }
   strong {
     color: ${desaturate(0, transparentize(0.13, styleVars.colors.burg[3]))};
-    font-size: 1rem;
+    font-size: 1.125rem;
     margin-bottom: 0rem;
+    border-bottom: 1px solid ${desaturate(0, transparentize(0.88, styleVars.colors.burg[3]))};
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.25em;
   }
   p {
-    color: ${desaturate(0, transparentize(0.13, styleVars.colors.burg[0]))};
-    font-size: 0.9rem;
+    color: ${desaturate(0.5, transparentize(0.13, styleVars.colors.burg[2]))};
+    font-size: 1rem;
+    font-weight: 400;
   }
 `;
 
 export const StyledIcon1 = styled(Icon1)`
-  height: 10rem;
+  width: 9rem;
   padding-right: 0.75rem;
 `;
 
 export const StyledIcon2 = styled(Icon2)`
-  height: 10rem;
+  width: 9rem;
+  padding-right: 0.75rem;
+`;
+
+export const StyledIcon3 = styled(Icon3)`
+  width: 9rem;
+  padding-right: 0.75rem;
+`;
+
+export const StyledIcon4 = styled(Icon4)`
+  width: 9rem;
   padding-right: 0.75rem;
 `;
 
 export const StyledCallout = styled(ProcessCallout)`
-  width: 50%;
+  width: 45%;
 `;

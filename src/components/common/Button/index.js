@@ -15,6 +15,7 @@ export const Button = styled.a`
   letter-spacing: 0.06rem;
   font-weight: 500;
   font-size: 0.9rem;
+  height: fit-content;
   &:focus {
     outline: none;
   }

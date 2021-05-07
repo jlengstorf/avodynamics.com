@@ -30,16 +30,12 @@ export const Footer = () => (
       <StyledContactContainer>
         <StyledContact>
           <Office />
-          <span>
-            1234 test ave
-            <br />
-            Mobile, AL
-          </span>
+          <span>Mobile, AL</span>
         </StyledContact>
-        <StyledContact>
+        {/* <StyledContact>
           <Call />
           <a href="tel:+11234567890">(123) 456-7890</a>
-        </StyledContact>
+        </StyledContact> */}
         <StyledContact>
           <Mail />
           <a href="mailto:solutions@avodynamics.com">solutions@avodynamics.com</a>

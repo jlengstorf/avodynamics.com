@@ -6,7 +6,7 @@ import { transparentize } from 'polished';
 import styleVars from 'styles/styleVars.js';
 
 export const Wrapper = styled.footer`
-  padding: 28rem 0 0.5rem 0;
+  padding: 12rem 0 0.5rem 0;
   background-image: url(${footerIllustration});
   background-size: cover;
   background-position: top;
@@ -22,7 +22,7 @@ export const StyledSocialContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 12rem;
   width: 95%;
   padding: 30px 0;
   max-width: 1000px;

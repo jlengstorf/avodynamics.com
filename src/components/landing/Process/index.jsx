@@ -8,6 +8,8 @@ import {
   ProcessHeading,
   StyledIcon1,
   StyledIcon2,
+  StyledIcon3,
+  StyledIcon4,
   StyledCallout,
 } from './styles';
 
@@ -44,7 +46,7 @@ export const Process = () => (
             </div>
           </ProcessHeading>
           <ProcessHeading>
-            <StyledIcon1 />
+            <StyledIcon3 />
             <div>
               <h3>3. Execution</h3>
               <strong>Developing sollutions</strong>
@@ -55,7 +57,7 @@ export const Process = () => (
             </div>
           </ProcessHeading>
           <ProcessHeading>
-            <StyledIcon2 />
+            <StyledIcon4 />
             <div>
               <h3>4. Closing? Analysis?</h3>
               <strong>Measuring your sucess</strong>
