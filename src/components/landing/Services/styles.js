@@ -22,11 +22,48 @@ export const ServiceTitleWrapper = styled.div`
   padding-bottom: 6rem;
   h2 {
     color: ${transparentize(0.2, styleVars.colors.burg[6])};
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
+    font-size: 2.4vw;
   }
   strong {
     color: ${transparentize(0.2, styleVars.colors.teal[4])};
-    font-size: 1.4rem;
+    font-size: 1.2vw;
+  }
+  @media (max-width: 1400px) {
+    width: 75%;
+    h2 {
+      font-size: 3.2vw;
+    }
+    strong {
+      font-size: 1.6vw;
+    }
+  }
+  @media (max-width: 980px) {
+    width: 80%;
+    h2 {
+      font-size: 3.8vw;
+    }
+    strong {
+      font-size: 2.4vw;
+    }
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    h2 {
+      font-size: 4.2vw;
+    }
+    strong {
+      font-size: 2.8vw;
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    h2 {
+      font-size: 6vw;
+    }
+    strong {
+      font-size: 3.6vw;
+    }
   }
 `;
 
@@ -43,6 +80,14 @@ export const ServiceWrapper = styled.div`
   width: 25%;
   min-width: 375px;
   margin-bottom: 2rem;
+  @media (max-width: 640px) {
+    width: 33%;
+    min-width: 320px;
+  }
+  @media (max-width: 580px) {
+    width: 80%;
+    min-width: 320px;
+  }
 `;
 
 export const ServiceHeadingWrapper = styled.div`

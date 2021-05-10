@@ -81,6 +81,10 @@ export const Sizzle = styled.aside`
       ${transparentize(0, styleVars.colors.teal[3])},
       ${transparentize(0.8, styleVars.colors.teal[3])}
     );
+    @media (max-width: 440px) {
+      width: 100%;
+      padding: 30px 20px 35px 20px;
+    }
   }
   .quote:before {
     width: 30px;
@@ -133,4 +137,11 @@ export const ButtonGroup = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 440px) {
+    flex-direction: column;
+    a {
+      text-align: center;
+      width: 100%;
+    }
+  }
 `;

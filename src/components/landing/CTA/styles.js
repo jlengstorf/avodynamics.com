@@ -23,68 +23,59 @@ export const CTAWrapper = styled.section`
   justify-content: space-between;
   flex-direction: row;
   min-height: 0;
+  @media (max-width: 600px) {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
 `;
 
 export const CTA = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
+  @media (max-width: 840px) {
+    flex-direction: column;
+  }
 
   .CTAsection {
     display: flex;
     flex-direction: column;
     width: 70%;
+    @media (max-width: 840px) {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 700px) {
+      width: 100%;
+    }
   }
   h2 {
     width: fit-content;
     color: ${styleVars.colors.teal[3]};
     font-size: 2.4rem;
+    @media (max-width: 1200px) {
+      font-size: 3vw;
+    }
+    @media (max-width: 840px) {
+      font-size: 3.5vw;
+    }
+    @media (max-width: 700px) {
+      font-size: 4vw;
+    }
+    @media (max-width: 600px) {
+      font-size: 5vw;
+    }
+    @media (max-width: 360px) {
+      font-size: 6vw;
+    }
   }
   p {
     padding-left: 2rem;
     max-width: 70%;
     border-left: 2px solid ${styleVars.colors.burg[3]};
     margin-left: 0.25rem;
-  }
-`;
-
-export const TestimonialTitleWrapper = styled.div`
-  width: 50%;
-  padding-bottom: 8rem;
-  h2 {
-    color: ${transparentize(0.3, styleVars.colors.burg[1])};
-    font-size: 2.4rem;
-  }
-`;
-
-export const Testimonial = styled.div`
-  display: flex;
-  img {
-    border-radius: 50% 50% 50% 50%;
-    padding: 0.25rem;
-    height: 12.5rem;
-    background: linear-gradient(
-      to bottom,
-      ${styleVars.colors.burg[1]},
-      ${styleVars.colors.burg[2]} 80%,
-      ${styleVars.colors.burg[3]}
-    );
-    z-index: 3;
-  }
-  div {
-    min-width: 60%;
-    width: 65%;
-    background: linear-gradient(
-      to bottom,
-      ${styleVars.colors.burg[1]},
-      ${styleVars.colors.burg[2]} 80%,
-      ${styleVars.colors.burg[3]}
-    );
-    color: white;
-    margin-left: -6.125rem;
-    padding: 1rem;
-    padding-left: 7.125rem;
-    z-index: 2;
-    border-radius: 0 1rem 1rem 0;
+    @media (max-width: 980px) {
+      max-width: 90%;
+    }
   }
 `;

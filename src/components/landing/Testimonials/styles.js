@@ -26,6 +26,9 @@ export const TestimonialTitleWrapper = styled.div`
     color: ${transparentize(0.13, styleVars.colors.burg[3])};
     font-size: 2.4rem;
   }
+  @media (max-width: 980px) {
+    padding-bottom: 2rem;
+  }
 `;
 
 export const Testimonial = styled.div`
@@ -57,6 +60,22 @@ export const Testimonial = styled.div`
           : transparentize(0.08, styleVars.colors.teal[4])};
   border-radius: 1rem;
 
+  @media (max-width: 980px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+  @media (max-width: 900px) {
+    flex-direction: row;
+    background: linear-gradient(
+      to right,
+      ${(props) => (props.primary ? styleVars.colors.burg[3] : styleVars.colors.teal[3])},
+      ${(props) => (props.primary ? styleVars.colors.burg[1] : styleVars.colors.teal[1])}
+    );
+    @media (max-width: 600px) {
+      align-items: flex-end;
+    }
+  }
+
   &:after {
     content: '';
     width: 150px;
@@ -68,6 +87,13 @@ export const Testimonial = styled.div`
     ${(props) => (props.primary ? 'left: -75px;' : 'right: 75px;')};
     transform: ${(props) => (props.primary ? 'matrix(0.9, 0, 0.4, 1, 135, 0)' : 'matrix(0.9, 0, -0.4, 1, 20, 0)')};
     z-index: -1;
+    @media (max-width: 900px) {
+      transform: matrix(0.5, 0, 0, 1, 0, 0);
+      left: 0;
+    }
+    @media (max-width: 480px) {
+      transform: matrix(0.3, 0, 0, 1, -25, 0);
+    }
   }
   .testimonialImage {
     width: 150px;
@@ -84,6 +110,15 @@ export const Testimonial = styled.div`
       width: 100%;
       height: auto;
     }
+    @media (max-width: 720px) {
+      width: 125px;
+      height: 125px;
+    }
+    @media (max-width: 600px) {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 2rem;
+    }
   }
   .testimonialText {
     width: 70%;
@@ -96,10 +131,17 @@ export const Testimonial = styled.div`
       opacity: 0.9;
       mix-blend-mode: overlay;
       text-align: ${(props) => (props.primary ? 'right' : 'left')};
+      @media (max-width: 900px) {
+        text-align: left;
+        width: 90%;
+      }
     }
     .description {
       font-size: 18px;
       line-height: 26px;
+      @media (max-width: 480px) {
+        margin-left: -3rem;
+      }
     }
   }
 `;
