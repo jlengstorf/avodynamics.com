@@ -1,6 +1,9 @@
 import React from 'react';
+// import { useStaticQuery, graphql } from 'gatsby';
+// import Img from 'gatsby-image';
 import { Container } from 'components/common';
 import natImg from 'assets/images/nat.jpg';
+import garImg from 'assets/images/garry.jpg';
 import { Wrapper, TestimonialWrapper, TestimonialTitleWrapper, Testimonial } from './styles';
 
 /* TODO: Use Gatsby Link for Buttons */
@@ -13,6 +16,7 @@ export const Testimonials = () => (
       <Testimonial primary>
         <div className="testimonialImage">
           <img src={natImg} alt="Nat, owner of Divine Designs" />
+          {/* <Img fluid={data.file.childImageSharp.fluid} alt="Nat, owner of Divine Designs" />; */}
         </div>
         <div className="testimonialText">
           <p className="description">
@@ -27,7 +31,7 @@ export const Testimonials = () => (
       </Testimonial>
       <Testimonial>
         <div className="testimonialImage">
-          <img src={natImg} alt="Nat, owner of Divine Designs" />
+          <img src={garImg} alt="Nat, owner of Divine Designs" />
         </div>
         <div className="testimonialText">
           <p className="description">
@@ -41,3 +45,15 @@ export const Testimonials = () => (
     </TestimonialWrapper>
   </Wrapper>
 );
+
+// export const NatImage = graphql`
+//   query {
+//     file(relativePath: { eq: "assets/images/nat.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 144) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `;
