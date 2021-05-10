@@ -3,8 +3,9 @@ module.exports = {
   logo: 'https://avodynamics.com/favicon/favicon-512.png',
   author: 'AVO Dynamics',
   url: 'https://avodynamics.com',
-  legalName: 'AVO Dynamics',
-  defaultDescription: 'AVO Dynamics, a digital media production and consulting company in Mobile, AL',
+  legalName: 'AVO Dynamics Inc.',
+  defaultDescription:
+    'AVO Dynamics, a digital media production and consulting company in Mobile, AL. If you need a video, website, corporate efficiency project, or need to grow your buisness in any way - we have a sollution.',
   socialLinks: {
     twitter: 'http://www.twitter.com/avodynamics',
     github: 'https://github.com/avodynamics',

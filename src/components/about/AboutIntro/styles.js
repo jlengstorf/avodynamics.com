@@ -68,10 +68,7 @@ export const Sizzle = styled.aside`
     display: inline-block;
     position: relative;
     /* box-shadow: 0 3px 8px ${transparentize(0.66, styleVars.colors.teal[2])},
-      0px 3px 12px ${transparentize(
-      0.86,
-      styleVars.colors.teal[1]
-    )}; */
+      0px 3px 12px ${transparentize(0.86, styleVars.colors.teal[1])}; */
     background: ${styleVars.colors.teal[2]};
     border: 0.5rem solid;
     border-image-slice: 1;
@@ -132,5 +129,4 @@ export const ButtonGroup = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 `;

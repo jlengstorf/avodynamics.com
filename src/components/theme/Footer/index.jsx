@@ -42,6 +42,6 @@ export const Footer = () => (
         </StyledContact>
       </StyledContactContainer>
     </StyledSocialContainer>
-    <StyledCopyright>© {new Date().getFullYear()} Avo Dynamics. All Rights Reserved</StyledCopyright>
+    <StyledCopyright>© {new Date().getFullYear()} AVO Dynamics Inc. All Rights Reserved</StyledCopyright>
   </Wrapper>
 );

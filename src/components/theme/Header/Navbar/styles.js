@@ -43,6 +43,12 @@ export const HeaderCTA = styled.a`
     -webkit-background-clip: text;
     background-clip: text;
   }
+  @media (max-width: 960px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 `;
 
 //

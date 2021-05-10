@@ -27,10 +27,11 @@ export const Process = () => (
             <StyledIcon1 />
             <div>
               <h3>1. Onboarding</h3>
-              <strong>Meeting your buisness</strong>
+              <strong>Meeting your business</strong>
               <p>
-                Here we meet your buisness and stuff to find out what you need so we can get it done, yo. Unique selling
-                propositions & aesthetics that insight action
+                We begin our projects by getting to know your business. We develop a deep understanding of how you
+                measure sucess for the project, and how to leverage the strengths of your business to acheive your
+                goals.
               </p>
             </div>
           </ProcessHeading>
@@ -40,30 +41,32 @@ export const Process = () => (
               <h3>2. Planning</h3>
               <strong>Analyzing problems & goals</strong>
               <p>
-                After we understand your needs and goals, we form a plan to get you where you need to go. Unique selling
-                propositions & aesthetics that insight action
+                After we understand your need, we form a comprehensive solution strategy to chart your path to success.
+                Our goal here is to solve the problem you came to us with, while adding unexpected value.
               </p>
             </div>
           </ProcessHeading>
           <ProcessHeading>
             <StyledIcon3 />
             <div>
-              <h3>3. Execution</h3>
-              <strong>Developing sollutions</strong>
+              <h3>3. Production</h3>
+              <strong>Streamlined solutions</strong>
               <p>
-                Here we meet your buisness and stuff to find out what you need so we can get it done, yo. Unique selling
-                propositions & aesthetics that insight action
+                We have a commitment to efficiency at the core of our culture. As we work with you, you'll be able to
+                stay up to date on the project through our client portal. We excede our client's expectations through
+                the ease and speed of communications, review processes, and transparency that we offer.
               </p>
             </div>
           </ProcessHeading>
           <ProcessHeading>
             <StyledIcon4 />
             <div>
-              <h3>4. Closing? Analysis?</h3>
+              <h3>4. Outcomes & Analysis</h3>
               <strong>Measuring your sucess</strong>
               <p>
-                After we understand your needs and goals, we form a plan to get you where you need to go. Unique selling
-                propositions & aesthetics that insight action
+                Our work dosn't stop at the final deliverable. We can stay connected with you to measure the results
+                that your project has had, help communicate those outcomes to your stakeholders, and provide insights on
+                next steps to continual growth and long term sustainability.
               </p>
             </div>
           </ProcessHeading>

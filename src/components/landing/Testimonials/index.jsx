@@ -34,7 +34,6 @@ export const Testimonials = () => (
             It was two weeks out from the elections I was worried about how it was going to go. I was advices to reach
             out to AVO Dynamics to film a commercial as a last minute boost. They really dug into my campaign, platform,
             and the issues my constituants cared about to craft a product beyond my expectations. I won that election.
-            Blugh.
           </p>
           <p className="testimonialTitle">Gary Doggette | County Comissioner, Choctaw County</p>
         </div>

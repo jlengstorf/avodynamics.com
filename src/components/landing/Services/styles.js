@@ -10,8 +10,7 @@ export const Wrapper = styled.div`
   padding-bottom: 4rem;
 `;
 
-export const ServicesWrapper = styled.section`
-  padding: 2rem 0;
+export const ServiceSectionWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,24 +30,34 @@ export const ServiceTitleWrapper = styled.div`
   }
 `;
 
-export const ServiceHeadingWrapper = styled.div`
-  width: 100%;
+export const ServicesWrapper = styled.section`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`;
+
+export const ServiceWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  min-width: 375px;
+  margin-bottom: 2rem;
+`;
+
+export const ServiceHeadingWrapper = styled.div`
+  display: flex;
 `;
 export const ServiceHeading = styled.div`
-  width: 25%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   h3 {
-    color: ${desaturate(0.4, transparentize(0.13, styleVars.colors.burg[6]))};
+    color: ${desaturate(0.4, transparentize(0.24, styleVars.colors.burg[5]))};
     font-size: 1rem;
     margin-bottom: 0.25rem;
   }
   p {
-    color: ${desaturate(0.8, transparentize(0.13, styleVars.colors.burg[5]))};
+    color: ${desaturate(0.8, transparentize(0.13, styleVars.colors.burg[6]))};
     font-size: 0.7rem;
     margin-bottom: 0;
   }
@@ -56,21 +65,25 @@ export const ServiceHeading = styled.div`
 
 export const StyledIcon1 = styled(Icon1)`
   width: 6rem;
+  min-width: 72px;
   padding-right: 0.75rem;
 `;
 
 export const StyledIcon2 = styled(Icon2)`
   width: 6rem;
+  min-width: 72px;
   padding-right: 0.75rem;
 `;
 
 export const StyledIcon3 = styled(Icon3)`
   width: 6rem;
+  min-width: 72px;
   padding-right: 0.75rem;
 `;
 
 export const StyledIcon4 = styled(Icon4)`
   width: 6rem;
+  min-width: 72px;
   padding-right: 0.75rem;
 `;
 
@@ -80,7 +93,6 @@ export const ServiceList = styled.div`
   flex-direction: row;
   justify-content: space-between;
   ul {
-    width: 25%;
     padding-left: 1rem;
     margin-left: 1.5rem;
     padding-top: 1rem;
