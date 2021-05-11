@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { transparentize } from 'polished';
 import styleVars from 'styles/styleVars.js';
 
 export const Button = styled.a`

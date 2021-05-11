@@ -1,7 +1,6 @@
 import footerIllustration from 'assets/illustrations/footer.svg';
 import Logo from 'assets/vector/logo-full.svg';
 import styled from 'styled-components';
-import { mq } from 'styles/media';
 import { transparentize } from 'polished';
 import styleVars from 'styles/styleVars.js';
 

@@ -10,7 +10,6 @@ import {
   address,
   contact,
   legalName,
-  foundingDate,
   logo,
 } from 'data/config';
 

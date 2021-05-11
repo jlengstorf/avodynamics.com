@@ -18,19 +18,19 @@ export const Wrapper = styled.div`
 
     @media (max-width: 960px) {
       color: ${transparentize(0.13, styleVars.colors.teal[4])};
-	  padding-bottom: 2px;
-	  position: relative;
+      padding-bottom: 2px;
+      position: relative;
       /* border-bottom: 1px solid ${transparentize(0.8, styleVars.colors.teal[4])} */
-	  &::after {
-		content: "";
-		position: absolute;
-		bottom: 2px;
-		left: 0;
-		height: 1px;
-		width: 110%;
-		margin-left: -1.25rem;
-		background: linear-gradient(90deg, transparent 0%, ${transparentize(0.8, styleVars.colors.teal[4])} 50%);
-	  }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        height: 1px;
+        width: 110%;
+        margin-left: -1.25rem;
+        background: linear-gradient(90deg, transparent 0%, ${transparentize(0.8, styleVars.colors.teal[4])} 50%);
+      }
     }
   }
 

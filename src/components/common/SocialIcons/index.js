@@ -24,7 +24,7 @@ const StyledSocialIcon = styled.div`
   }
 `;
 
-const SocialIcon = props => {
+const SocialIcon = (props) => {
   const { link, children } = props;
   return (
     <StyledSocialIcon>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Logo from 'assets/vector/logo.svg';
 import styleVars from 'styles/styleVars.js';
-import { transparentize } from 'polished';
 
 export const Wrapper = styled.nav`
   width: 100%;
