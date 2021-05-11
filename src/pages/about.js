@@ -24,7 +24,7 @@ const WarmWrapper = styled.div`
   position: relative;
 `;
 
-export default () => (
+const pAbout = () => (
   <Layout>
     <SEO />
     <AboutIntro />
@@ -97,3 +97,5 @@ export default () => (
     <CTASection />
   </Layout>
 );
+
+// export default pAbout;
