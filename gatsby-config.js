@@ -79,5 +79,6 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-webpack-bundle-analyser-v2', // http://127.0.0.1:3001?
   ],
 };

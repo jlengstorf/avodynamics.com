@@ -3,6 +3,9 @@
 - [ ] hero-patterns
 - [ ] ? smooth-scroll
 - [ ] ? react-awesome-reveal
+- [ ] https://www.gatsbyjs.com/plugins/gatsby-plugin-loadable-components-ssr/
+- [ ] Possibly: https://www.gatsbyjs.com/plugins/gatsby-plugin-preconnect/
+- [ ] https://www.gatsbyjs.com/plugins/gatsby-plugin-facebook-pixel/?=pixel
 
 # Styling
 
