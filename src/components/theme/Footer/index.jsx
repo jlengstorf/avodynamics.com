@@ -3,7 +3,7 @@ import SocialIcon from 'components/common/SocialIcons';
 import { Youtube } from '@styled-icons/boxicons-logos/Youtube';
 import { FacebookCircle } from '@styled-icons/boxicons-logos/FacebookCircle';
 import { Office } from '@styled-icons/icomoon/Office';
-import { Call } from '@styled-icons/ionicons-solid/Call';
+// import { Call } from '@styled-icons/ionicons-solid/Call';
 import { Mail } from '@styled-icons/heroicons-solid/Mail';
 import {
   Wrapper,
