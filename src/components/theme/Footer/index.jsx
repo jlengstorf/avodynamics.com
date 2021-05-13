@@ -17,7 +17,7 @@ import {
 
 export const Footer = () => (
   <Wrapper>
-    <StyledSocialContainer>
+    {/* <StyledSocialContainer>
       <StyledLogo />
       <StyledSocialIconContainer>
         <SocialIcon link="/">
@@ -31,17 +31,17 @@ export const Footer = () => (
         <StyledContact>
           <Office />
           <span>Mobile, AL</span>
-        </StyledContact>
-        {/* <StyledContact>
+        </StyledContact> */}
+    {/* <StyledContact>
           <Call />
           <a href="tel:+11234567890">(123) 456-7890</a>
         </StyledContact> */}
-        <StyledContact>
+    {/* <StyledContact>
           <Mail />
           <a href="mailto:solutions@avodynamics.com">solutions@avodynamics.com</a>
         </StyledContact>
       </StyledContactContainer>
-    </StyledSocialContainer>
+    </StyledSocialContainer> */}
     <StyledCopyright>© {new Date().getFullYear()} AVO Dynamics Inc. All Rights Reserved</StyledCopyright>
   </Wrapper>
 );
