@@ -79,6 +79,13 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-webpack-bundle-analyser-v2', // http://127.0.0.1:3001?
+    'gatsby-plugin-webpack-bundle-analyser-v2',
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://avodynamics.com.com`,
+        stripQueryString: true,
+      },
+    },
   ],
 };

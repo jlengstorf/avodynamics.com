@@ -53,6 +53,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build2": "gatsby build --no-uglify",
     "start": "gatsby develop -o",
     "serve": "gatsby serve -o",
     "lint": "eslint .",
